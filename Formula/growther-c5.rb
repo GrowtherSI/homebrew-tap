@@ -2,24 +2,24 @@
 class GrowtherC5 < Formula
   desc "Growther.si C5 — self-contained V8-bytecode agent runtime"
   homepage "https://growther.si"
-  version "2026.10.7-v322"
+  version "2026.10.10-v324"
 
   on_macos do
     depends_on macos: :ventura
     if Hardware::CPU.arm?
-      url "https://raw.githubusercontent.com/GrowtherSI/release/main/dist/c5/v2026.10.7-v322/growther-c5-macos-arm64-node24.tar.gz"
-      sha256 "90a515b29f807f395c5d37113168a6925690d6ac89693cbefe241da8a16efbe0"
+      url "https://raw.githubusercontent.com/GrowtherSI/release/main/dist/c5/v2026.10.10-v324/growther-c5-macos-arm64-node24.tar.gz"
+      sha256 "4e9f2459fe35b5db3b07c413513b55e24321391ec54e928dfa7d5b0b8d51cd74"
     end
     if Hardware::CPU.intel?
-      url "https://raw.githubusercontent.com/GrowtherSI/release/main/dist/c5/v2026.10.7-v322/growther-c5-macos-x64-node24.tar.gz"
-      sha256 "ba40c4b0bc45836bf12ec379801bea1815b35342c020ccea06f0c60b2597348c"
+      url "https://raw.githubusercontent.com/GrowtherSI/release/main/dist/c5/v2026.10.10-v324/growther-c5-macos-x64-node24.tar.gz"
+      sha256 "cf91c4543fda1d8a668878a5416ccbcd4f9e455f730fd986276ec9320ebaad3d"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://raw.githubusercontent.com/GrowtherSI/release/main/dist/c5/v2026.10.7-v322/growther-c5-linux-x64-node24.tar.gz"
-      sha256 "f1e94fda018bce2090998ff0f1cde373952f51c10def49661c29f19722038c3a"
+      url "https://raw.githubusercontent.com/GrowtherSI/release/main/dist/c5/v2026.10.10-v324/growther-c5-linux-x64-node24.tar.gz"
+      sha256 "5af1df0028eea2fda627edd025e6af36d86999a3e78d56aa55b703e4afa544db"
     end
   end
 
