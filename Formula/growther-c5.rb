@@ -8,14 +8,18 @@ class GrowtherC5 < Formula
     depends_on macos: :ventura
     if Hardware::CPU.arm?
       url "https://raw.githubusercontent.com/GrowtherSI/release/main/dist/c5/v2026.11.25-v358/growther-c5-macos-arm64-node24.tar.gz"
-      sha256 "1eb31071fe4c731a5a6287b84b74925402c66ade3c4b961c3a16bfc8bc48e2cb"
+      sha256 "05709f8ad29814c1e0c24ab0f370925eb8a5b2080fff4b7bd0b87bdc4bc0cc4e"
+    end
+    if Hardware::CPU.intel?
+      url "https://raw.githubusercontent.com/GrowtherSI/release/main/dist/c5/v2026.11.25-v358/growther-c5-macos-x64-node24.tar.gz"
+      sha256 "b056dda06ddbc7aba9d454ec4bccc04f037a39106a0da386e6f9d0bc93a3d834"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://raw.githubusercontent.com/GrowtherSI/release/main/dist/c5/v2026.11.25-v358/growther-c5-linux-x64-node24.tar.gz"
-      sha256 "9d99db6191d57c7925c100c0228d9f3dcf1f811c8c89fca7cf2dc3817f736b52"
+      sha256 "3d632945a9c67312ad0dc0fa9ce13c2b1e7b1a1cd39bbff52678d95a8b9494c5"
     end
   end
 
